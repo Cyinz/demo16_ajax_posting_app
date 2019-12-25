@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   has_many :posts
 
-  def idsplay_name
+  def display_name
     self.email.split("@").first
   end
 end
