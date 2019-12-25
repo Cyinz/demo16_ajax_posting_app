@@ -1,0 +1,25 @@
+<p>
+  <a id="my-open-click">Click Me</a>
+</p>
+
+<div id="foo" style="border: 1px solid red;">
+  <a id="my-hide-click">Hide</a>
+</div>
+
+<div>
+  123
+</div>
+
+<script>
+    $(function () {
+        $("#foo").hide();
+
+        $("#my-open-click").click(function () {
+          $("#foo").slideDown();
+        })
+
+        $("#my-hide-click").click(function () {
+          $("#foo").slideUp();
+        })
+    })
+</script>
